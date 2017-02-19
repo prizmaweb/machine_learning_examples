@@ -34,6 +34,7 @@ def main():
     X = (X - mu) / std
 
     print "Performing logistic regression..."
+    # Take the last 1000 samples as test set and train using rest
     Xtrain = X[:-1000,]
     Ytrain = Y[:-1000]
     Xtest  = X[-1000:,]

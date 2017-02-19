@@ -25,6 +25,7 @@ from util import get_transformed_data, forward, error_rate, cost, gradW, gradb, 
 
 def main():
     X, Y, _, _ = get_transformed_data()
+    # consider first 300 columns
     X = X[:, :300]
 
     # normalize X first
